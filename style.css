@@ -63,7 +63,7 @@
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
+  float: inline-flex;
   width: 32.01%;
   padding: 10px;
   /* height: 300px; Should be removed. Only for demonstration */
