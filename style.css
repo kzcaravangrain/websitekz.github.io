@@ -61,7 +61,43 @@
 
 }
 
-/* Create three equal columns that floats next to each other */
+.column1 {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 30%; /* The width is 20%, by default */
+}
+
+.column2 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 30%; /* The width is 60%, by default */
+}
+
+.column3 {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 30%; /* The width is 20%, by default */
+}
+
+
+@media screen and (max-width: 800px) {
+  .column1, .column2, .column3 {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;  
+
+}
+
+
+/* /* Create three equal columns that floats next to each other */
 .column {
   float: inline-flex;
   width: 99.0%;
@@ -75,7 +111,7 @@
   display: table;
   clear: both;  
 
-}
+} */
 
 .body1{
   height: 30vh;
